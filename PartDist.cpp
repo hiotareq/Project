@@ -35,6 +35,7 @@ bool checkDistance( Particle &p, vector<Particle> &v, const double &s, const int
     return true;
 }
 
+//на самом деле, эта функция может сожрать ооооочень много времени, но иначе частицы распределяются неправдоподообным образом
 void PartDist::setRand(vector<Particle> &v, const double &l, const double &s) {
     int q = v.size();
     random_device rd;
